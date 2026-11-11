@@ -197,6 +197,26 @@
         </div>
     </footer>
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Script AJAX con jQuery para consumir los datos de Node.js / MySQL -->
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                url: 'http://localhost:3000/api/proyectos',
+                type: 'GET',
+                success: function(response) {
+                    console.log("¡Datos traídos desde la base de datos:", response);
+                },
+                error: function(error) {
+                    console.log("Error al conectar con el servidor:", error);
+                }
+            });
+        });
+    </script>
 </body>
 </html>
