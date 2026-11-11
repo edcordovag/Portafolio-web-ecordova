@@ -1,0 +1,73 @@
+.fondo-contactos{
+    padding: 50px 0px;
+    background: url(../img/brouchre.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.text-contactos{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contactos{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact{
+    width: 350px;
+    margin-bottom: 10px;
+}
+.contact h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.listas li{
+    list-style-image:url(../img/buena.png);
+    margin-bottom: 10px;
+}
+.formulario{
+    background:purple;
+    padding: 10px;
+    color: white;
+}
+input[type="text"], input[type="email"]{
+    width: 100%;
+    height: 35px;
+}
+textarea{
+    width: 100%;
+}
+input[type="text"]:focus, input[type="email"]:focus{
+    outline:0 none;
+}
+textarea:focus{
+    outline:0 none;
+}
+input[type="submit"]{
+    background: black;
+    color: white;
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Mediaqueris para Tablets */
+@media only screen and (max-width:980px){
+    .contactos{
+        width: 90%;
+    }
+    .contact:nth-child(1){
+        margin-left: 20px;
+    }
+    footer:nth-child(1){
+        text-align: center;
+    }
+    footer:nth-child(2){
+        margin-left: 20px;
+    }
+
+}

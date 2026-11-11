@@ -1,0 +1,80 @@
+/* MENU PRINCIPAL */
+.container-hamburguesa {
+    display: flex;
+    align-items: center;
+}
+
+#check {
+    display: none;
+}
+
+#menu {
+    display: none;
+    cursor: pointer;
+}
+
+#menu span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    margin: 5px;
+    background: white;
+}
+
+.botonera ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.botonera li {
+    margin-left: 30px;
+}
+
+.botonera a {
+    color: white;
+    font-size: 14px;
+}
+
+.botonera a:hover {
+    color: #63d9f7;
+}
+
+/* MENU PARA CELULARES */
+@media (max-width: 800px) {
+    .cont-menu {
+        min-height: 58px;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    .botonera {
+        display: none;
+        position: absolute;
+        top: 58px;
+        left: 0;
+        width: 100%;
+        background: #07169c;
+    }
+
+    .botonera ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .botonera li {
+        margin: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .botonera a {
+        display: block;
+        padding: 14px 5%;
+    }
+
+    #check:checked ~ .botonera {
+        display: block;
+    }
+}

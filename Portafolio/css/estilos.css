@@ -1,0 +1,120 @@
+/* Estilos propios: selectores, clases, colores, márgenes y padding */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #292943;
+    line-height: 1.6;
+}
+
+.menu {
+    background-color: #5b16c9;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #ffe45c !important;
+}
+
+.portada {
+    background-color: #f2edff;
+    padding: 65px 0;
+}
+
+.portada h1 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.portada h1 span {
+    color: #5b16c9;
+}
+
+.texto-morado {
+    color: #5b16c9;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.iniciales {
+    width: 165px;
+    height: 165px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #5b16c9;
+    border: 8px solid #ded1ff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.boton-principal {
+    color: white;
+    background-color: #5b16c9;
+    border: 1px solid #5b16c9;
+}
+
+.boton-principal:hover {
+    color: white;
+    background-color: #401091;
+}
+
+.seccion {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.seccion h2 {
+    font-weight: bold;
+}
+
+.subrayado {
+    width: 55px;
+    height: 4px;
+    background-color: #5b16c9;
+    margin-top: 10px;
+    margin-bottom: 22px;
+    border-radius: 4px;
+}
+
+.fondo {
+    background-color: #f7f5fc;
+}
+
+.tarjeta {
+    border: 1px solid #e2dcef;
+    box-shadow: 0 3px 10px rgba(40, 20, 80, 0.05);
+}
+
+.tarjeta h5 {
+    color: #5b16c9;
+    font-weight: bold;
+}
+
+#mensaje {
+    color: #5b16c9;
+}
+
+.pie {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: #292943;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .portada {
+        padding: 45px 0;
+    }
+
+    .portada h1 {
+        font-size: 32px;
+    }
+}

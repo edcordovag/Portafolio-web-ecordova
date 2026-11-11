@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Centro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+
+<body>
+    <div id="preloader">
+    <img src="img/preloader.gif" alt="Cargando...">
+    </div>
+
+    <!-- MENU PRINCIPAL -->
+    <header class="cabecera">
+        <div class="container cont-menu">
+            <a href="#inicio" class="logo"><img src="img/logo.png" alt="Dental Centro"></a>
+
+            <div class="container-hamburguesa">
+                <input type="checkbox" id="check">
+                <label id="menu" for="check"><span></span><span></span><span></span></label>
+                <nav class="botonera">
+                    <ul>
+                        <li><a href="#inicio">INICIO</a></li>
+                        <li><a href="#nosotros">NOSOTROS</a></li>
+                        <li><a href="#galeria">GALERIA</a></li>
+                        <li><a href="#contactos">CONTACTOS</a></li>
+                        <li><a href="#formulario"><i class="fa-solid fa-user"></i> LOGIN</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- BANNER PRINCIPAL -->
+    <section class="banner" id="inicio">
+        <div class="cont-banner">
+            <h2>Clinica Dental Centro</h2>
+            <p>Más de 10 años de experiencia, ofrecemos a nuestros pacientes confianza, tratamientos modernos y especializados.</p>
+        </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="nosotros" id="nosotros">
+        <div class="container">
+            <h2 class="titulo">CLINICA DENTAL CENTRO</h2>
+            <p class="texto-intro">Somos un equipo de profesionales dedicados al cuidado de tu salud dental. Ofrecemos a nuestros pacientes confianza, tratamientos modernos y especializados para el cuidado de su salud dental y estética. Nuestros pacientes son para nosotros lo más importante.</p>
+
+            <div class="imagen-intro">
+                <img src="img/cuidados.jpg" alt="Atención en una clínica dental">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="mensaje-banner">
+        <div class="mensaje-transparente">
+            <h2>Ven y te atenderemos con lo mejor...</h2>
+            <p>Especialidad dedicada a cuidar tu sonrisa, mejorar la salud bucal y ofrecer tratamientos para toda la familia.</p>
+        </div>
+    </section>
+
+    <!-- GALERIA Y DESCRIPCION -->
+    <section class="galeria" id="galeria">
+        <div class="container">
+            <div class="contenido-galeria">
+                <div class="texto-galeria">
+                    <h2>Lo mejor para las sonrisas de nuestros clientes</h2>
+                    <p>Ofrecemos servicios de excelencia para lograr una atención diferenciada, basada en el profesionalismo, la prevención y el cuidado de cada paciente.</p>
+                </div>
+
+                <div class="carrusel">
+                    <button class="flecha anterior" id="anterior" type="button" aria-label="Imagen anterior">&lt;&lt;</button>
+                    <img id="imagen-galeria" src="img/img01.jpg" alt="Atención dental">
+                    <button class="flecha siguiente" id="siguiente" type="button" aria-label="Imagen siguiente">&gt;&gt;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTOS Y FORMULARIO -->
+    <section class="contactos" id="contactos">
+        <div class="container">
+            <h2 class="titulo">CONTÁCTANOS</h2>
+
+            <div class="contenido-contactos">
+                <div class="datos-contacto">
+                    <h3>UBÍCANOS EN:</h3>
+                    <p><i class="fa-solid fa-tooth"></i> Av. Gerardo Unger 5059, Los Olivos 15311.</p>
+                    <p><i class="fa-solid fa-tooth"></i> Teléfono: 993431336.</p>
+                    <p><i class="fa-solid fa-tooth"></i> WhatsApp: 993431336.</p>
+                    <p><i class="fa-solid fa-tooth"></i> Correo: romank150701@gmaill</p>
+                </div>
+
+                <div class="formulario" id="formulario">
+                    <h2>Déjanos un Mensaje</h2>
+                    <form id="form-contacto">
+                        <label for="nombre">Apellidos y Nombres</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
+
+                        <label for="correo">Correo Electrónico</label>
+                        <input type="email" id="correo" name="correo" placeholder="Ingresa tu Email" required>
+
+                        <label for="celular">Celular</label>
+                        <input type="tel" id="celular" name="celular" placeholder="Ingresa tu Celular" pattern="[0-9+() -]{7,20}" required>
+
+                        <label for="comentarios">Comentarios</label>
+                        <textarea id="comentarios" name="comentarios" rows="6" required></textarea>
+
+                        <button type="submit">Enviar</button>
+                        <p id="mensaje-formulario" class="mensaje-formulario" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAPA -->
+    <section class="seccion-mapa">
+        <h2>NUESTRO MAPA</h2>
+        <iframe
+    title="Ubicación de Las Sirenitas"
+    src="https://maps.google.com/maps?q=-11.9755983,-77.0606956&z=16&output=embed"
+    width="100%"
+    height="350"
+    style="border:0;"
+    allowfullscreen
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+<p style="text-align:center; padding:10px;">
+    <a href="https://www.google.com/maps/place/Las+Sirenitas/@-11.9733982,-77.0537942,16z/data=!4m6!3m5!1s0x9105ce4a73a749b5:0x6d47d4c9d6f27266!8m2!3d-11.9755983!4d-77.0606956!16s%2Fg%2F11gh2qsz5k"
+       target="_blank"
+       rel="noopener noreferrer">
+        Ver ubicación en Google Maps
+    </a>
+</p>
+    </section>
+
+    <!-- PIE DE PAGINA -->
+    <footer class="pie-pagina">
+        <div class="container contenido-pie">
+            <div class="marca-pie">
+                <a href="#inicio" class="logo logo-pie"><img src="img/logo.png" alt="Dental Centro"></a>
+                <h3>Dental Centro</h3>
+                <p>SÍGUENOS EN:</p>
+                <div class="redes-pie">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h3>HORARIO DE ATENCIÓN</h3>
+                <p>Todos los días: 9:00 am - 9:00 pm</p>
+                <p>Lunes a viernes: 9:00 am - 9:00 pm</p>
+                <p>Sábados y domingos: 9:00 am - 5:00 pm</p>
+            </div>
+
+            <div>
+                <h3>CONTÁCTANOS EN:</h3>
+                <p>Agrega aquí la dirección de tu clínica.</p>
+                <p>Celular: agrega tu número.</p>
+                <p>Correo: contacto@dentalcentro.com</p>
+            </div>
+        </div>
+        <div class="credito"><p>Proyecto académico - Dental Centro</p></div>
+    </footer>
+
+    <!-- REDES SOCIALES LATERALES -->
+    <div class="redes-laterales">
+        <a class="twitter" href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a class="facebook" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a class="youtube" href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+    <!-- BOTON VOLVER ARRIBA -->
+    <a href="#inicio" class="volver-arriba" aria-label="Volver al inicio"><i class="fa-solid fa-angles-up"></i></a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

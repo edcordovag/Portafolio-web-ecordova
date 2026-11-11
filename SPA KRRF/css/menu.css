@@ -1,0 +1,30 @@
+#menu{
+    display: none;
+}
+/*Mediaqueris para Tablets*/
+@media only screen and (max-width:980px){
+    #menu{
+        display: block;
+        float: right;
+        font-size:30px;
+        margin: 10px;
+        background: deeppink;
+        color: white;
+        padding: 10px;
+    }
+    .botonera{
+        position: relative;
+        float: none;
+        left: -100%;
+    }
+    .botonera-open{
+        left: 0%;
+    }
+    .botonera ul{
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        background: black;
+        top: 70px;
+    }
+}

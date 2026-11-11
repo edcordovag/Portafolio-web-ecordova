@@ -1,0 +1,71 @@
+.fondo-footer{
+    background: purple;
+    padding:50px 0px;
+}
+.footer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer{
+    width: 350px;
+    margin-bottom: 10px;
+    color: white;
+}
+footer h3{
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+.auspi li{
+    list-style-image:url(../img/buena.png);
+    margin-bottom: 10px;
+}
+.redes{
+    text-align: center;
+}
+.btn{
+    background: black;
+    padding:10px 15px;
+    border-radius: 50%;
+}
+.fondo-cierre{
+    background: black;
+    padding:20px 0px;
+}
+.cierre{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pie{
+    background: rgb(66, 66, 66);
+    padding:20px 0px;
+}
+.pie p{
+    text-align: center;
+    color: white;
+}
+
+/* Mediaqueris para Tablets */
+@media only screen and (max-width:980px){
+    .footer, .cierre{
+        width: 90%;
+    }
+
+}
+/* Mediaqueris para Celulares */
+@media only screen and (max-width:480px){
+    .footer, .cierre{
+        width: 98%;
+    }
+    .cierre{
+        text-align: center;
+    }
+
+}
